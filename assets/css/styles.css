@@ -1,0 +1,105 @@
+:root {       /*   VARIABLES   */
+    --vermelho: #e50914;
+    --preto: #141414;
+    --bar: #242424;
+}
+
+* {      /*    RESET    */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    border: solid;
+    border-width: 1px;
+    border-color: var(--bar);
+    background-color: var(--bar);
+    color: var(--vermelho);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Arial Black', Times;
+    margin-left: 5px;
+}
+
+header a{
+    text-decoration: none;
+    color: grey;
+    margin-right: 5px;
+}
+
+header a:hover {
+    color: white;
+}
+
+main {
+    height:70vw;
+}
+
+#promoted {
+    background: url("../img/kenobi.jpg");
+    background-size: 100%;
+    min-height: 55%;
+    transition: 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 0 60px 20px;
+}
+
+#promoted:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)100%), url("../img/kenobi.jpg");
+    background-size: 110%;
+    min-height: 60%;
+}
+
+#promoted h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#promoted-text {
+    color: white;
+    max-width: 70%;
+    margin: 0 0 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.promoted_button {
+    border-width: 0;
+    padding: 15px 30px;
+    background-color: var(--preto);
+    color: white;
+    margin-right: 15px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.promoted_button:hover {
+    background-color: white;
+    color: var(--preto);
+    cursor:pointer;
+}
+
+.promoted_button i {
+    margin-right: 5px;
+}
+
+#catalog {
+    color: white;
+}
+
+.catalog_cover {
+    cursor: pointer;
+}
